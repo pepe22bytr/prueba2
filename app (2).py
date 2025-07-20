@@ -1,7 +1,12 @@
 import streamlit as st
 import pandas as pd
 import io
-from utils.hour_calculator import procesar_fila, calcular_horas
+from utils.hour_calculator import (
+    convertir_a_str,
+    calcular_horas,
+    procesar_fila,
+    calcular_dia_tra,
+)
 
 def main():
     st.title("📊 Procesador de Horas Laborales")
